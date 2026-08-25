@@ -1,10 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <radialGradient id="ball" cx="38%" cy="30%" r="72%">
-      <stop offset="0%" stop-color="#f7b0a4"/>
-      <stop offset="42%" stop-color="#d42a1c"/>
-      <stop offset="100%" stop-color="#8f160c"/>
-    </radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a8a92"/><stop offset="55%" stop-color="#176068"/><stop offset="100%" stop-color="#0b3439"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4e2a6"/><stop offset="48%" stop-color="#c9a961"/><stop offset="100%" stop-color="#9c7d3f"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdfaf3"/><stop offset="100%" stop-color="#eadfca"/>
+    </linearGradient>
   </defs>
-  <circle cx="32" cy="32" r="29" fill="url(#ball)"/>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <rect x="36" y="36" width="440" height="440" rx="60" fill="none" stroke="url(#brass)" stroke-width="13"/>
+  <!-- feuille avec coin plié -->
+  <path d="M162 116 h150 l38 38 v242 a12 12 0 0 1 -12 12 H162 a12 12 0 0 1 -12 -12 V128 a12 12 0 0 1 12 -12 Z"
+        fill="url(#paper)" stroke="#7a6a48" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M312 116 v38 h38 Z" fill="#d9cba7" stroke="#7a6a48" stroke-width="6" stroke-linejoin="round"/>
+  <!-- lignes de texte -->
+    <rect x="196" y="196" width="150" height="16" rx="8" fill="url(#brass)"/>
+    <rect x="196" y="238" width="150" height="16" rx="8" fill="url(#brass)"/>
+    <rect x="196" y="280" width="150" height="16" rx="8" fill="url(#brass)"/>
+    <rect x="196" y="322" width="96" height="16" rx="8" fill="url(#brass)"/>
+    
 </svg>
